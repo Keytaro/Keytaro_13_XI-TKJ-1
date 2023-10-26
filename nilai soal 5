@@ -1,0 +1,14 @@
+# Meminta input nilai tugas
+nilai_tugas = float(input("Masukkan nilai tugas (0-100): "))
+
+# Meminta input nilai ujian
+nilai_ujian = float(input("Masukkan nilai ujian (0-100): "))
+
+# Memeriksa apakah siswa lulus atau gagal
+if nilai_tugas > 70 and nilai_ujian > 60:
+    hasil = "Lulus"
+else:
+    hasil = "Gagal"
+
+# Menampilkan hasil
+print("Hasil:", hasil)

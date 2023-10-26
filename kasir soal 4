@@ -1,0 +1,30 @@
+# Meminta input total belanjaan
+total_belanjaan = float(input("Masukkan total belanjaan: "))
+
+# Meminta input status anggota (premium atau biasa)
+status_anggota = input("Masukkan status anggota (premium atau biasa): ")
+
+# Menginisialisasi variabel diskon
+diskon = 0
+
+# Memeriksa status anggota dan total belanjaan
+if status_anggota == "premium":
+    if total_belanjaan > 500000:
+        diskon = 0.15
+    else:
+        diskon = 0.10
+elif status_anggota == "biasa":
+    if total_belanjaan > 300000:
+        diskon = 0.07
+
+# Menghitung jumlah diskon
+jumlah_diskon = total_belanjaan * diskon
+
+# Menghitung total yang harus dibayarkan
+total_harga = total_belanjaan - jumlah_diskon
+
+# Menampilkan hasil
+print("Total belanjaan: Rp.", total_belanjaan)
+print("Status anggota:", status_anggota)
+print("Diskon:", diskon * 100, "%")
+print("Total yang harus dibayarkan: Rp.", total_harga)

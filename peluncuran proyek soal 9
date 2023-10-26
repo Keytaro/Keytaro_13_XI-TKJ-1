@@ -1,0 +1,10 @@
+# Mengambil status persiapan proyek dari pengguna
+status_persiapan = input("Status persiapan proyek (Siap/Tunda): ")
+
+# Menentukan apakah proyek dapat diluncurkan
+if status_persiapan.lower() == "siap":
+    print("Proyek diluncurkan.")
+elif status_persiapan.lower() == "tunda":
+    print("Proyek ditunda.")
+else:
+    print("Status persiapan tidak valid. Harap masukkan 'Siap' atau 'Tunda'.")

@@ -1,0 +1,8 @@
+# Meminta informasi pembaruan perangkat lunak (yes/no)
+pembaruan = input("Apakah ada pembaruan perangkat lunak (yes/no): ")
+
+# Menentukan apakah sistem perlu di-restart
+if pembaruan.lower() == "yes":
+    print("Sistem perlu di-restart.")
+else:
+    print("Sistem tidak perlu di-restart.")

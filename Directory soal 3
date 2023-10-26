@@ -1,0 +1,16 @@
+import os
+
+# Path ke direktori server
+direktori_server = '/path/ke/direktori/server'
+
+# Nama file yang ingin diperiksa
+nama_file = 'nama_file.txt'
+
+# Membentuk path lengkap ke file
+path_file = os.path.join(direktori_server, nama_file)
+
+# Memeriksa apakah file sudah ada
+if os.path.exists(path_file):
+    print("File sudah ada")
+else:
+    print("File belum ada")

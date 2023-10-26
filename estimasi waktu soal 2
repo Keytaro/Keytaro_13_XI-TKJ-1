@@ -1,0 +1,15 @@
+# Meminta input estimasi waktu selesai proyek
+estimasi_waktu = input("Masukkan estimasi waktu selesai proyek (YYYY-MM-DD): ")
+
+# Meminta input tanggal target selesai
+tanggal_target = input("Masukkan tanggal target selesai (YYYY-MM-DD): ")
+
+# Mengubah input menjadi objek tanggal
+estimasi_waktu = (estimasi_waktu, "%Y-%m-%d")
+tanggal_target = (tanggal_target, "%Y-%m-%d")
+
+# Membandingkan tanggal
+if estimasi_waktu > tanggal_target:
+    print("Tepat waktu")
+else:
+    print("Terlambat")

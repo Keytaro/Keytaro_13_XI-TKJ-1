@@ -1,0 +1,12 @@
+# Mengambil durasi peminjaman buku dalam hari dari pengguna
+durasi_peminjaman = int(input("Masukkan durasi peminjaman buku dalam hari: "))
+
+# Menentukan jenis pinjaman berdasarkan durasi peminjaman
+if durasi_peminjaman <= 7:
+    jenis_pinjaman = "Peminjaman Pendek"
+elif durasi_peminjaman <= 30:
+    jenis_pinjaman = "Peminjaman Menengah"
+else:
+    jenis_pinjaman = "Peminjaman Panjang"
+
+print("Jenis pinjaman:", jenis_pinjaman)
