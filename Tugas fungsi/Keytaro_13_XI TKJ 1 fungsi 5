@@ -1,0 +1,16 @@
+def fibonacci(n):
+    # Deklarasi variabel
+    fib_n_1 = 0
+    fib_n_2 = 1
+
+    # Perulangan
+    for i in range(n):
+        # Hitung bilangan Fibonacci ke-n
+        fib_n = fib_n_1 + fib_n_2
+
+        # Update bilangan Fibonacci ke-(n-1) dan bilangan Fibonacci ke-(n-2)
+        fib_n_2 = fib_n_1
+        fib_n_1 = fib_n
+
+    # Kembalikan hasil
+    return fib_n
