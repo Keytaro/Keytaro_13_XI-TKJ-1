@@ -9,7 +9,7 @@ ARNETTHA SEPTINEZ       13514093
 """
 
 from random import randint
-from CSP import *
+from sqlite3 import *
 from copy import deepcopy
 
 class Schedule:
