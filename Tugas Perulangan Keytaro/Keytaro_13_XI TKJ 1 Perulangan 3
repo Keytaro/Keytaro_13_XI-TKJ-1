@@ -1,0 +1,11 @@
+investasi_awal = 10000
+tahun = 0
+
+# Perulangan
+while investasi_awal < 20000:
+    # Hitung nilai investasi pada tahun berikutnya
+    investasi_awal = investasi_awal * (1 + 0.06)
+    tahun += 1
+
+# Cetak hasil
+print(f"Jumlah tahun yang dibutuhkan: {tahun}")

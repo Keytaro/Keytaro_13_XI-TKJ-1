@@ -1,0 +1,13 @@
+def total_deret_ganjil(batas):
+    # Deklarasi variabel
+    jumlah = 0
+    n = 1
+
+    # Perulangan
+    while n <= batas:
+        # Hitung jumlah
+        jumlah += n
+        n += 2
+
+    # Kembalikan hasil
+    return jumlah
