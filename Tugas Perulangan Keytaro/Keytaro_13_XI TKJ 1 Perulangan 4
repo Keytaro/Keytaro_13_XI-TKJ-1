@@ -1,0 +1,13 @@
+sisa_apel = 100
+hari = 0
+
+# Perulangan
+while True:
+    # Hitung sisa apel pada hari berikutnya
+    sisa_apel -= sisa_apel * 0.1
+    hari += 1
+
+    # Cek apakah sisa apel sudah kurang dari 20
+    if sisa_apel < 20:
+        break
+print(f"Jumlah hari yang dibutuhkan: {hari}")

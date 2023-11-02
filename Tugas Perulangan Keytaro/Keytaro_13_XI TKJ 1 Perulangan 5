@@ -1,0 +1,9 @@
+jumlah_pembelahan = 0
+waktu_menit = 2 * 60  # 2 jam = 120 menit
+
+# Perulangan
+for menit in range(0, waktu_menit, 20):
+    jumlah_pembelahan += 1
+
+# Cetak hasil
+print(f"Jumlah pembelahan: {jumlah_pembelahan}")

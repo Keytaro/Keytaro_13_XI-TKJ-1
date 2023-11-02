@@ -1,0 +1,13 @@
+jarak_lari = 5
+minggu = 1
+
+# Perulangan
+while minggu <= 12:
+    # Hitung jarak lari pada minggu berikutnya
+    jarak_lari = jarak_lari * 1.1
+    minggu += 1
+
+# Cetak hasil
+print("Jarak lari pelari setiap minggunya adalah:")
+for minggu in range(1, 13):
+    print(f"Minggu ke-{minggu}: {jarak_lari}")
